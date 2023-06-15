@@ -9,7 +9,7 @@ RREPLACES_${PN} = "open-vmware-tools"
 RCONFLICTS_${PN} = "open-vmware-tools"
 
 SRC_URI = "git://github.com/vmware/open-vm-tools.git;protocol=https;tag=stable-${PV};branch=9.10.x"
-
+SRCREV = "85693a5d68bbde94b76cafbbd5005d07c2a65723"
 # SRC_URI += "file://patches/fix_kernel_include_patch.patch"
 # SRC_URI += "file://patches/fix_distrofile.patch"
 # SRC_URI += "file://patches/default_source.patch"

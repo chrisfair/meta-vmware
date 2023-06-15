@@ -1,1 +1,1 @@
-RECOMMENDS_packagegroup-core-tools-profile_append_vmware = " systemtap"
+RECOMMENDS_packagegroup-core-tools-profile:append_vmware = " systemtap"

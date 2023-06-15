@@ -39,7 +39,7 @@ do_export_sources() {
 }
 
 #add process to compile and install mount utility
-do_compile_append() {
+do_compile:append() {
     oe_runmake -C ${S}/utils
 }
 
@@ -51,7 +51,7 @@ module_do_install() {
     install -m 644 vboxvideo.ko $MODULE_DIR
 }
 
-do_install_append() {
+do_install:append() {
     install -d ${D}${base_sbindir}
     install -m 755 ${S}/utils/mount.vboxsf ${D}${base_sbindir}
 }

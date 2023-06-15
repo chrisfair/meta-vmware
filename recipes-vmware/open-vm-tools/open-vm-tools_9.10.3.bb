@@ -73,13 +73,13 @@ FILES_${PN}-dbg += "/usr/lib/open-vm-tools/plugins/common/.debug \
 
 CONFFILES_${PN} += "${sysconfdir}/vmware-tools/tools.conf"
 
-do_install_append() {
+do_install:append() {
     install -d ${D}${systemd_unitdir}/system ${D}${sysconfdir}/vmware-tools
     install -m 644 ${WORKDIR}/*.service ${D}${systemd_unitdir}/system
 # install -m 0644 ${WORKDIR}/tools.conf ${D}${sysconfdir}/vmware-tools/tools.conf
 }
 
-do_configure_prepend() {
+do_configure:prepend() {
     export CUSTOM_PROCPS_NAME=procps
     export CUSTOM_PROCPS_LIBS=-L${STAGING_LIBDIR}/libprocps.so
     export CUSTOM_SSL_CPPFLAGS=-I${STAGING_INCDIR}

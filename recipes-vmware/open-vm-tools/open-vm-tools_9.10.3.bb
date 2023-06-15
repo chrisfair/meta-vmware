@@ -8,7 +8,7 @@ PR = "r1"
 RREPLACES_${PN} = "open-vmware-tools"
 RCONFLICTS_${PN} = "open-vmware-tools"
 
-SRC_URI = "https://github.com/vmware/open-vm-tools/archive/stable-${PV}.tar.gz"
+SRC_URI = "git://github.com/vmware/open-vm-tools.git;protocol=https;tag=stable-${PV};branch=9.10.x"
 
 # SRC_URI += "file://patches/fix_kernel_include_patch.patch"
 # SRC_URI += "file://patches/fix_distrofile.patch"

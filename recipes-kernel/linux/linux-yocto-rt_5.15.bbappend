@@ -1,1 +1,1 @@
-COMPATIBLE_MACHINE_vmware = "(vmware|virtualbox)"
+COMPATIBLE_MACHINE = "(vmware|virtualbox)"

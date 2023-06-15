@@ -1,7 +1,7 @@
 SYSLINUX_PROMPT ?= "0"
 SYSLINUX_TIMEOUT ?= "10"
 SYSLINUX_LABELS = "install boot"
-LABELS_append = " ${SYSLINUX_LABELS} "
+LABELS:append = " ${SYSLINUX_LABELS} "
 
 # need to define the dependency and the ROOTFS for directdisk
 # do_bootdirectdisk[depends] += "${PN}:do_rootfs"
@@ -17,7 +17,7 @@ inherit image_types
 IMAGE_TYPEDEP_ova = "live"
 IMAGE_TYPES_MASKED += "ova"
 
-IMAGE_DEPENDS_ova = "virtual/kernel"
+do_image_ova[depends] += "mtools-native:do_populate_sysroot"
 
 create_ova () {
         echo "Creating OVF"

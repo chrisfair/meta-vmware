@@ -8,7 +8,7 @@ PR = "r1"
 RREPLACES_${PN} = "open-vmware-tools"
 RCONFLICTS_${PN} = "open-vmware-tools"
 
-SRC_URI = "https://github.com/vmware/open-vm-tools.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/vmware/open-vm-tools.git;protocol=https;branch=master;nobranch=1"
 
 S = "${WORKDIR}/open-vm-tools-stable-${PV}/open-vm-tools"
 

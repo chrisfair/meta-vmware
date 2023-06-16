@@ -2,7 +2,7 @@ DECRIPTION = "open-vmware-tools"
 SECTION = "vmware-tools"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0-only;md5=751419260aa954499f7abaabaa882bbe \
-                    file://open-vm-tools/COPYING;md5=751419260aa954499f7abaabaa882bbe"" 
+                    file://open-vm-tools/COPYING;md5=751419260aa954499f7abaabaa882bbe" 
 PR = "r1"
 
 RREPLACES_${PN} = "open-vmware-tools"

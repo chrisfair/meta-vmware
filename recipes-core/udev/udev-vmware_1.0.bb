@@ -1,7 +1,6 @@
 SUMMARY = "Extra VMWare specific configuration files"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/LICENSE;md5=3da9cfbcb788c80a0384361b4de20420 \
-                    file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/LICENSE;md5=3da9cfbcb788c80a0384361b4de20420"
 
 PR = "r1"
 

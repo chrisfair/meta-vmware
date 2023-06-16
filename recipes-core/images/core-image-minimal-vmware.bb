@@ -4,5 +4,5 @@ LICENSE = "MIT"
 
 IMAGE_INSTALL:append = "vim"
 
-COMPATIBLE_MACHINE = "vmware"
+COMPATIBLE_MACHINE = "vmware|virtualbox"
 

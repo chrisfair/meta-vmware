@@ -8,7 +8,7 @@ PR = "r1"
 RREPLACES_${PN} = "open-vmware-tools"
 RCONFLICTS_${PN} = "open-vmware-tools"
 
-SRC_URI = "git://github.com/vmware/open-vm-tools.git;protocol=https;branch=master"
+SRC_URI = "https://github.com/vmware/open-vm-tools.git;protocol=https;branch=master"
 SRC_URI += "file://files_${PV}/vmtoolsd.service"
 
 SRC_URI[md5sum] = "3777e30d72ed4098ecff16e6480cf1cc"

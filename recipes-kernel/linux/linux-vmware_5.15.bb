@@ -1,6 +1,6 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
-
 require recipes-kernel/linux/linux-yocto.inc
+
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += "file://vmware.cfg"
 SRC_URI[md5sum] = "17ac24a7b15df53c4dc9fd83ec034cf4"

@@ -1,5 +1,0 @@
-# vmware.scc
-define KMACHINE vmware
-define KTYPE standard
-include ktypes/standard/standard.scc
-kconf hardware vmware_defconfig

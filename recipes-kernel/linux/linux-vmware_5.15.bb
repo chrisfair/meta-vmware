@@ -1,4 +1,4 @@
-require recipes-kernel/linux/linux-yocto.inc
+require recipes-kernel/linux/linux-vmware.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 

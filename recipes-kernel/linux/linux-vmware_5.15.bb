@@ -1,9 +1,13 @@
-require recipes-kernel/linux/linux-yocto.inc
+DESCRIPTION = "Custom Kernel for VMWARE Builds"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR};md5=0855555555"
 
+inherit kernel
+
+
+SRC_URI="git://github.com:torvalds/linux.git;branch=master"
+SRCREV=8bb7eca972ad531c9b149c0a51ab43a417385813
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI += "file://vmware.cfg"
-SRC_URI[md5sum] = "17ac24a7b15df53c4dc9fd83ec034cf4"
-SRC_URI[sha256sum] = "9c54ce6fea26c0cf0474190df56c19fed3b4cf0be465ed8004d488bfd95dfb86"
 
 COMPATIBLE_MACHINE = "vmware|virtualbox"
